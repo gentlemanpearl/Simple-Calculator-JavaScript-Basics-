@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator">
+    <h1>Simple Calculator</h1>
+
+    <form id="calc-form">
+      <label for="input1">Input 1</label>
+      <input id="input1" type="number" step="any" required />
+
+      <label for="input2">Input 2</label>
+      <input id="input2" type="number" step="any" required />
+
+      <label for="operation">Operation</label>
+      <select id="operation">
+        <option value="add">Add (+)</option>
+        <option value="subtract">Subtract (−)</option>
+        <option value="multiply">Multiply (×)</option>
+        <option value="divide">Divide (÷)</option>
+      </select>
+
+      <button type="submit" id="calculate">Calculate</button>
+    </form>
+
+    <div id="result" aria-live="polite"></div>
+  
+    <script src="script.js" defer></script>
+  </main>
+</body>
+</html>
